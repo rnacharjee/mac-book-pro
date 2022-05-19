@@ -66,12 +66,14 @@ document.getElementById("promotion-btn").addEventListener("click", function () {
 
 function afterPromotionCost() {
   const appliedCode = document.getElementById("promo-code").value;
-  const currentCost = document.getElementById("cost-promotion").innerText;
+  const currentCost = document.getElementById("total-cost").innerText;
   const costAfterPromotion = (parseInt(currentCost) * 80) / 100;
   if (appliedCode == "stevekaku") {
     console.log(costAfterPromotion);
     document.getElementById("cost-promotion").innerText = costAfterPromotion;
     document.getElementById("promo-code").value = "";
+    document.getElementById("promo-validation").innerText =
+      "Successfully Applied Promo Code !!";
   } else {
     document.getElementById("promo-validation").innerText =
       "Invalid Promo Code";
