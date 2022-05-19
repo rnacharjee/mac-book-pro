@@ -1,3 +1,4 @@
+//setting the button value
 document
   .getElementById("memory-8gb-btn")
   .addEventListener("click", function () {
@@ -63,7 +64,7 @@ function calculateTotalCost() {
 document.getElementById("promotion-btn").addEventListener("click", function () {
   afterPromotionCost();
 });
-
+// calculate cost after apply promo code
 function afterPromotionCost() {
   const appliedCode = document.getElementById("promo-code").value;
   const currentCost = document.getElementById("total-cost").innerText;
