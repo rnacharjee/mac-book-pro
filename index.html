@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buy MacBook Pro</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="grid grid-cols-2 gap-4">
+      <div class="grid justify-items-end m-4 p4">
+        <div class="w-1/2">
+          <img src="images/mac.png" alt="" />
+        </div>
+      </div>
+      <div class="m-4 p4">
+        <div>
+          <h1 class="text-4xl text-amber-600 font-bold">
+            iMac 24 inch - With Apple M1 Chip inside
+          </h1>
+          <p class="text-sm font-normal">
+            The iMac (24-inch, 2021) is an improvement on its 21.5-inch
+            predecessor in pretty much every way. It’s got a better, larger
+            screen, a new modern and colorful design, and delivers excellent
+            performance – all for the same price. If you’ve been eyeing up an
+            all-in-one for work and play, this is an excellent choice.
+          </p>
+        </div>
+        <div class="my-8">
+          <h4 class="text-xl font-bold">Memory</h4>
+          <button
+            id="memory-8gb-btn"
+            class="border px-4 mr-2 rounded-md border-black hover:bg-black hover:text-white"
+          >
+            8 GB unified Memory
+          </button>
+          <button
+            id="memory-16gb-btn"
+            class="border px-4 mr-2 rounded-md border-black hover:bg-black hover:text-white"
+          >
+            16 GB unified Memory
+          </button>
+        </div>
+        <div class="my-8">
+          <h4 class="text-xl font-bold">Storage</h4>
+          <button
+            id="storage-256gb-btn"
+            class="border px-4 mr-2 rounded-md border-black hover:bg-black hover:text-white"
+          >
+            256 GB SSD
+          </button>
+          <button
+            id="storage-512gb-btn"
+            class="border px-4 mr-2 rounded-md border-black hover:bg-black hover:text-white"
+          >
+            512 GB SSD
+          </button>
+          <button
+            id="storage-1tb-btn"
+            class="border px-4 mr-2 rounded-md border-black hover:bg-black hover:text-white"
+          >
+            1 TB SSD
+          </button>
+        </div>
+        <div class="my-8">
+          <h4 class="text-xl font-bold">Choose Your Delivery Option</h4>
+          <button
+            id="regular-delivery-btn"
+            class="border px-4 mr-2 rounded-md border-black hover:bg-black hover:text-white"
+          >
+            Regular Delivery - 72 hour
+          </button>
+          <button
+            id="express-delivery-btn"
+            class="border px-4 mr-2 rounded-md border-black hover:bg-black hover:text-white"
+          >
+            Express Delivery - 24 hour
+          </button>
+        </div>
+        <div class="inline-block">
+          <table class="table-auto">
+            <tbody>
+              <tr class="border-b">
+                <td class="w-48">Best Price</td>
+                <td class="text-right">$ <span id="base-cost">1299</span></td>
+              </tr>
+              <tr class="border-b">
+                <td class="">Extra Memory Cost</td>
+                <td class="text-right">
+                  $<span id="extra-memory-cost">0</span>
+                </td>
+              </tr>
+              <tr class="border-b">
+                <td class="">Extra Storage Cost</td>
+                <td class="text-right">
+                  $<span id="extra-storage-cost">0</span>
+                </td>
+              </tr>
+              <tr class="border-b border-black">
+                <td class="">Delivery Charge</td>
+                <td class="text-right">$<span id="delivery-cost">0</span></td>
+              </tr>
+              <tr class="border-b">
+                <td class="">Total Price</td>
+                <td class="text-right">$<span id="total-cost">1299</span></td>
+              </tr>
+            </tbody>
+          </table>
+          <h3 class="mt-4">Add Promo Code</h3>
+          <input
+            id="promo-code"
+            class="border border-black rounded px-2 py-1"
+            type="text"
+          />
+          <button
+            id="promotion-btn"
+            class="border px-4 mr-2 rounded-md bg-red-600 text-white p-1"
+          >
+            Apply
+          </button>
+          <h1 id="promo-validation"></h1>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <h1 class="text-center text-3xl">
+      Total: $<span id="cost-promotion">1299</span>
+    </h1>
+    <script src="calculation.js"></script>
+  </body>
+</html>
