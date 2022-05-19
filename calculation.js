@@ -59,6 +59,7 @@ function calculateTotalCost() {
     parseInt(delivererCost);
   document.getElementById("total-cost").innerText = totalCost;
   document.getElementById("cost-promotion").innerText = totalCost;
+  document.getElementById("promo-validation").innerText = "";
 }
 
 document.getElementById("promotion-btn").addEventListener("click", function () {
